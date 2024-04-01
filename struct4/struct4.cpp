@@ -1,6 +1,6 @@
-#include <iostream>
-#include<string>
+#include<iostream>
 using namespace std;
+#include<string>
 
 struct DetailAlamat {
 	string desa;
@@ -22,6 +22,7 @@ int main() {
 		getline(cin, mhs[i].nim);
 		cout << "Nama Mahasiswa : ";
 		getline(cin, mhs[i].nama);
+		
 		cout << "alamat mahasiswa : " << endl;
 		cout << "\t nama Desa : ";
 		cin >> mhs[i].alamat.desa;
@@ -35,7 +36,7 @@ int main() {
 
 	for (int i = 0; i < 3; i++) {
 		cout << endl;
-		cout << "Data mahasiswa ke-" << (i = 1) << ":" << endl;
+		cout << "Data mahasiswa ke-" << (i + 1) << ":" << endl;
 		cout << "\n Nim :" << mhs[i].nim;
 		cout << "\n Nama : " << mhs[i].nama;
 		cout << "\n alamat : ";
@@ -43,6 +44,7 @@ int main() {
 		cout << "\n \t Kota : " << mhs[i].alamat.kota;
 		cout << "\n Umur : " << mhs[i].umur;
 		cout << endl;
+		
 	}
 }
 
